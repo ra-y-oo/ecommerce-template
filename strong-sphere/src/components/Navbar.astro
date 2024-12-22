@@ -1,0 +1,57 @@
+---
+const navLinks = [
+  {
+    name: 'Home',
+    url: '/',
+  },
+  {
+    name: 'Blog',
+    url: '#',
+  },
+  {
+    name: 'Features',
+    url: '#',
+  },
+  {
+    name: 'Pricing',
+    url: '#',
+  },
+];
+
+---
+
+<style>
+    nav{
+        background-color: #222222;
+        padding: 1rem 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    a{
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: none;
+        color
+    }
+    a::hover{
+        text-decoration: underline;
+    }
+
+</style>
+<nav class="landing-nav">
+    <h1><a href="/">shopIT</a></h1>
+    <ul class="nav-links" role="navigation">
+        {navLinks.map(link => (
+          <li role="none">
+            <a href={link.url} class="btn btn--${link.style} nav-link">{link.name}</a>
+          </li>
+        ))
+        }
+      </ul>  
+</nav>
