@@ -1,13 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Pricecard from '../components/Pricecard.astro';
+import Feature from '../components/Feature.astro'
+
 ---
 <style>
 	.hero{
 		padding: 1rem 1.5rem;
 	}
-	hero p.hero-txt{
-		max-width: 5ch;
+	p{
+		font-weight: 500;
+	}
+	.hero a{
+		font-weight: 800;
 	}
 </style>
 <Layout>
@@ -17,4 +22,10 @@ import Pricecard from '../components/Pricecard.astro';
 		<p class="hero-txt">Your custom store. Your domain. Ready to launch </p>
 		<a href="/sign-up">Get Started</a>
 	</div>
+	
+	<div class="flex">
+		<Feature />
+		<Feature />
+	</div>
+	
 </Layout>
