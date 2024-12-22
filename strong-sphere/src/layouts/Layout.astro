@@ -20,14 +20,7 @@ import Navbar from '../components/Navbar.astro';
 
 		<slot />
 
-		<footer class="blur">
-			<small>Copyright &copy <span id="copyrightYear"></span> shopIT</small>
-		</footer>
-	
-		<script>
-			document.querySelector('#copyrightYear')!.textContent = new Date().getFullYear().toString();
-	
-		</script>
+		
 	</body>
 	
 
