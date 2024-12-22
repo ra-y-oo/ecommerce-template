@@ -1,5 +1,6 @@
 html{
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter Tight", serif;
+    font-optical-sizing: auto;
 }
 .txt-xl {
     font-size: 3.5rem;
