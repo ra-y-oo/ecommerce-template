@@ -2,14 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import Pricecard from '../components/Pricecard.astro';
 import Feature from '../components/Feature.astro'
+import Newslettercard from '../components/Newlettercard.astro'
 
 ---
 <style>
-	.hero, .features, .pricing{
+	.hero, .features, .pricing, .cta{
 		padding: 1rem 1.5rem;
 	}
 	p{
 		font-weight: 500;
+		max-width: 35ch;
 	}
 	.hero a{
 		font-weight: 800;
@@ -36,5 +38,9 @@ import Feature from '../components/Feature.astro'
 		<h2 class="headline">Pricing</h2>
 		<Pricecard />
 	</div>
-	
+	<div class="cta">
+		<h2>Ready to Get Started?</h2>
+		<p>Your store is just a few clicks away. Choose your domain, pick your plan, and start selling today.</p>
+		<Newslettercard />
+	</div>
 </Layout>

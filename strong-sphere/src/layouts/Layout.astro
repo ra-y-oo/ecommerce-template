@@ -20,9 +20,7 @@ import Navbar from '../components/Navbar.astro';
 
 		<slot />
 
-		
-	</body>
-	<footer class="blur">
+		<footer class="blur">
 			<small>Copyright &copy <span id="copyrightYear"></span> shopIT</small>
 		</footer>
 	
@@ -30,6 +28,8 @@ import Navbar from '../components/Navbar.astro';
 			document.querySelector('#copyrightYear')!.textContent = new Date().getFullYear().toString();
 	
 		</script>
+	</body>
+	
 
 
 </html>
