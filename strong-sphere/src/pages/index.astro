@@ -5,7 +5,7 @@ import Feature from '../components/Feature.astro'
 
 ---
 <style>
-	.hero{
+	.hero, .features, .pricing{
 		padding: 1rem 1.5rem;
 	}
 	p{
@@ -13,6 +13,9 @@ import Feature from '../components/Feature.astro'
 	}
 	.hero a{
 		font-weight: 800;
+	}
+	.headline{
+		margin-inline: 1rem;
 	}
 </style>
 <Layout>
@@ -23,14 +26,15 @@ import Feature from '../components/Feature.astro'
 		<a href="/login">Get Started</a>
 	</div>
 	
-	<div class="flex">
+	<div class="features">
+		<h2 class="headline">Features</h2>
 		<Feature />
 		<Feature />
 	</div>
 
 	<div class="pricing">
-		<h2>Pricing</h2>
-		
+		<h2 class="headline">Pricing</h2>
+		<Pricecard />
 	</div>
 	
 </Layout>
